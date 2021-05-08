@@ -13,10 +13,10 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class BeerInventoryDto {
-    private UUID id;
-    private OffsetDateTime createdDate;
-    private OffsetDateTime lastModifiedDate;
-    private UUID beerId;
-    private String upc;
-    private Integer quantityOnHand;
+  private UUID id;
+  private OffsetDateTime createdDate;
+  private OffsetDateTime lastModifiedDate;
+  private UUID beerId;
+  private String upc;
+  private Integer quantityOnHand;
 }
