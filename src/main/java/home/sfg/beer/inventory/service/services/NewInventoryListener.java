@@ -3,7 +3,7 @@ package home.sfg.beer.inventory.service.services;
 import home.sfg.beer.inventory.service.config.JmsConfig;
 import home.sfg.beer.inventory.service.domain.BeerInventory;
 import home.sfg.beer.inventory.service.repositories.BeerInventoryRepository;
-import home.sfg.common.events.NewInventoryEvent;
+import home.sfg.brewery.model.events.NewInventoryEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

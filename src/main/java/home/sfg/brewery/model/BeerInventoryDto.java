@@ -1,4 +1,4 @@
-package home.sfg.beer.inventory.service.web.model;
+package home.sfg.brewery.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
