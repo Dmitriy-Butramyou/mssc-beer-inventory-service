@@ -1,6 +1,7 @@
 package home.sfg.beer.inventory.service.services;
 
 import home.sfg.beer.inventory.service.config.JmsConfig;
+import home.sfg.brewery.model.events.AllocateOrderRequest;
 import home.sfg.brewery.model.events.AllocateOrderResult;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +18,7 @@ public class AllocationListener {
   private final JmsTemplate jmsTemplate;
 
   @JmsListener(destination = JmsConfig.ALLOCATE_ORDER_QUEUE)
-  public void listen(AllocateOrderResult request) {
+  public void listen(AllocateOrderRequest request){
     AllocateOrderResult.AllocateOrderResultBuilder builder = AllocateOrderResult.builder();
     builder.beerOrderDto(request.getBeerOrderDto());
 
